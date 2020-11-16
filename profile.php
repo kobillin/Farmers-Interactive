@@ -20,10 +20,13 @@ if(!isset($_SESSION['user_email'])){
 	<title><?php echo "$user_name"; ?></title>
 	<meta charset="utf-8">
  	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 	<link rel="stylesheet" type="text/css" href="style/home_style2.css">
+	<script src="bootstrap/js/jquery.min.js"></script>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<script src="bootstrap/js/bootstrap.min.js"></script>
 </head>
 <style>
 	#cover-img{
@@ -231,7 +234,7 @@ if(!isset($_SESSION['user_email'])){
 			 					</div>
 			 				</div> <br>
 			 				<a href='single.php?post_id=$post_id' style='float:right;'><button class='btn btn-success'>View</button></a>
-			 				<a href='functions/delete_post.php?post_id=$posts_id' style='float:right;'><button class='btn btn-danger'>Delete</button>
+			 				<a href='functions/delete_post.php?post_id=$posts_id' style='float:right;'><button class='btn btn-danger'>Delete</button></a>
 			 			</div><br><br>
 			 			";
 			 		}

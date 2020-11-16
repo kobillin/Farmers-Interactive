@@ -4,9 +4,13 @@
 	<title>Signin</title>
 	<meta charset="utf-8">
  	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="bootstrap/js/jquery.min.js"></script>
+
 </head>
 <style>
 	body{
@@ -14,7 +18,7 @@
 	}
 	.main-content{
 		width: 50%;
-		height: 40%;
+		height: 90%;
 		margin: 10px auto;
 		background-color: #fff;
 		border: 2px solid #e6e6e6;
@@ -71,7 +75,7 @@
 					<center><button id="signin" class="btn btn-info btn-lg" name="login">Login</button></center>
 					<?php include("login.php"); ?>
 
-					<a style="text-decoration: none; margin-top: 5px; float: right;color: #187FAB;" data-toggle="tooltip" title="Admin signin!" href="admin/index.php">Are you an admin?</a><br><br>
+					<!-- <a style="text-decoration: none; margin-top: 5px; float: right;color: #187FAB;" data-toggle="tooltip" title="Admin signin!" href="admin/index.php">Are you an admin?</a><br><br> -->
 				</form>
 			</div>
 		</div>

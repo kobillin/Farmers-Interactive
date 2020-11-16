@@ -8,11 +8,11 @@
             <li class="nav-item">
               <a style="color: white;"  class="nav-link" href="users.php"><span class="glyphicon glyphicon-user"> Users</a>
             </li><br>
-            <!-- <li class="nav-item">
+            <li class="nav-item">
 	         <a href="posts.php" class="nav-link"><span class="glyphicon glyphicon-pencil"> Posts</a>           
             </li><br>
 
-            <li class="nav-item"> 
+           <!--  <li class="nav-item"> 
                 <a href="messages.php" class="nav-link"><span class="glyphicon glyphicon-inbox"> Messages</a>
             </li><br> -->
           </ul>

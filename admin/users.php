@@ -8,6 +8,19 @@ if(!isset($_SESSION['user_email'])){
 }
 ?>
 <?php 
+         if(isset($_GET['u_id'])){
+          global $con;
+
+          $user_id = $_GET['u_id'];
+
+          $select ="select * from users where user_id ='$user_id'";
+          $run = mysqli_query($con, $select);
+          $row = mysqli_fetch_array($run);
+
+          $name = $row['user_name'];
+        }
+    ?>
+<?php 
 	$mysqli =new mysqli('localhost', 'root','', 'farmers') or die(mysqli_error(mysqli));
 	$result =$mysqli->query("SELECT * from users") or die($mysqli->error);
 
@@ -25,10 +38,10 @@ if(!isset($_SESSION['user_email'])){
 	<title><?php echo "$username"; ?>/Manage users</title>
 	<meta charset="utf-8">
  	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="style/home_style2.css">
+	<script src="../bootstrap/js/jquery.min.js"></script>
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../style/home_style2.css">
 </head> 
 <body>
 	<div class="row">
@@ -63,7 +76,8 @@ if(!isset($_SESSION['user_email'])){
       <td><?php echo $row["user_county"]; ?></td>
       <td><?php echo $row["user_gender"]; ?></td>
       <td>
-       <!-- <a href='functions/delete_user.php?user_id=$user_id' style='float:right;'><button class='btn btn-danger'>Delete</button> -->
+       <a href='?u_id=$user_id' style='float:right;'><button class='btn btn-danger'>Ban User</button>
+        functions/delete_user.php
       </td>
      </tr>
                 <?php 

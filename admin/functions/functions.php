@@ -692,6 +692,9 @@ function single_post(){
 							        <a style='text-decoration:none; cursor:pointer; color:#3897f0' href='user_profile.php?u_id=$user_id'> 
 							        <strong><h2>$f_name $l_name</h2></strong>
 							        </a>
+							        <a style='text-decoration:none; cursor:pointer; color:white; height:40px;' href='functions/delete_user.php?u_id=$user_id'> 
+							        <strong><h2 class='btn btn-danger'>Delete</h2></strong>
+							        </a>
 							        </div>
 						        <div class='col-sm-3'></div>
 				        </div>
